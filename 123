@@ -1,0 +1,32 @@
+#include <string.h>
+#include <stdio.h>
+
+typedef struct Employee {
+    int em_id;
+    char em_name[100];
+    char em_age[8];
+    char em_phone[13];
+    int em_salary;
+}emp;
+
+
+
+int main()
+{
+    emp data_i;
+    strcpy(data_i.em_name,"IU Lee");
+    strcpy(data_i.em_age,"18");
+    strcpy(data_i.em_phone,"0937123456");
+    data_i.em_id=64;
+    data_i.em_salary=48000;
+    
+    
+    printf("Em ID : %d\n",data_i.em_id);
+    printf("Em name : %s\n",data_i.em_name);
+    printf("Em age : %s\n",data_i.em_age);
+    printf("Em phone : %s\n",data_i.em_phone);
+    printf("Em salary : %d\n",data_i.em_salary);
+
+    return 0;
+}
+
